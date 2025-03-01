@@ -1,0 +1,21 @@
+autoinstall:
+  version: 1
+  identity:
+    hostname: ubuntu-autoinstall  
+    username: aboba
+    # generate a SHA512-based encrypted password: $ openssl passwd -6
+    password: "$6$IQl9A.oB3io4nQ23$JOAi5R4edvZR4hYQ.1dCAhymZAGabnLaEYqpfC2q3eR.NOzeRg9TGq3utPxdXtaiYvUKiSitZO6VURf4uxOOh1"
+  storage:
+    layout:
+      name: lvm
+  snaps:
+    - name: spotify
+      classic: false
+    - name: telegram-desktop
+      classic: false
+    - name: code
+      classic: true
+    - name: brave
+      classic: false
+  packages:
+    - vim
