@@ -19,3 +19,6 @@ autoinstall:
       classic: false
   packages:
     - vim
+  late-commands:
+    - curtin in-target -- apt-get update
+    - curtin in-target -- apt-get install -y curl cmake gcc git
